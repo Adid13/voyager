@@ -261,23 +261,7 @@ img.yt-video-image {
     background-color: rgba(0,0,0,0.8);
 }
 
-.video-modal-content {
-    margin: auto;
-    width: 80%;
-    height: 95%;
-}
-
-.video-modal-content .up {
-    cursor: pointer;
-    height: 10%;
-    margin: auto;
-    margin-bottom: -14px;
-    margin-top: 20px;
-    text-align: center;
-    width: 64px;
-}
-
-.video-modal-content .close {
+.video-modal .close {
     color: #BBB;
     cursor: pointer;
     float: right;
@@ -286,16 +270,27 @@ img.yt-video-image {
     text-decoration: none;
 }
 
-.video-modal-content .down {
-    cursor: pointer;
-    height: 10%;
+.video-modal-content {
     margin: auto;
-    margin-top: 10px;
-    text-align: center;
-    width: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 95%;
+}
+
+.video-modal-content .left {
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.video-modal-content .right {
+    cursor: pointer;
+    margin-left: 30px;
 }
 
 .video-modal-content-inner {
+    width: 64%;
     height: 80%;
 }
 

@@ -139,8 +139,8 @@ var VOYAGER;
             VOYAGER.videoNavigation = {}
             for (var i = 0; i < videos.length; i++) {
                 VOYAGER.videoNavigation[videos[i].index] = {
-                    up: i == 0 ? undefined : videos[i - 1].index,
-                    down: i == videos.length - 1 ? undefined : videos[i + 1].index
+                    left: i == 0 ? undefined : videos[i - 1].index,
+                    right: i == videos.length - 1 ? undefined : videos[i + 1].index
                 };
             }
 
@@ -412,7 +412,7 @@ var VOYAGER;
                 var modalContent = $(".video-modal-content-inner");
 
                 modalContent.empty();
-                modalContent.append('<webview id="embedded-video" src="'
+                modalContent.append('<div class="close">×</div><webview id="embedded-video" src="'
                     + $(this).attr("data-url") + '"></webview>');
 
                 // Display metadata
@@ -434,19 +434,19 @@ var VOYAGER;
                   window.open(e.targetUrl, "_blank");
                 });
 
-                // Render up and down arrows
+                // Render left and right arrows
                 var navigation = VOYAGER.videoNavigation[$(this).attr("data-index")];
-                ["up", "down"].forEach(function(direction) {
+                ["left", "right"].forEach(function(direction) {
                     var arrow = modal.find("." + direction);
                     if (navigation[direction] != undefined) {
                         var navigationElement = $("#feature-img-" + navigation[direction]);
                         arrow.attr('data-index', navigationElement.attr('data-index'));
                         arrow.attr('data-url', navigationElement.attr('data-url'));
                         arrow.addClass('video-link');
-                        arrow.find("svg").show();
+                        arrow.find("svg").css("visibility", "visible");
                     } else {
                         arrow.removeClass('video-link');
-                        arrow.find("svg").hide();
+                        arrow.find("svg").css("visibility", "hidden");
                     }
                 });
 
@@ -457,7 +457,7 @@ var VOYAGER;
                 modal.show();
             });
 
-            $(document).on("click", ".video-modal .up, .video-modal .down", function(e) {
+            $(document).on("click", ".video-modal .left, .video-modal .right", function(e) {
                 e.stopPropagation();
             });
 
@@ -497,12 +497,12 @@ var VOYAGER;
                 $(".video-modal .close").click();
                 e.preventDefault();
                 return false;
-            } else if (e.which == 38) { // up key
-                $(".video-modal .up").click();
+            } else if (e.which == 37) { // left key
+                $(".video-modal .left").click();
                 e.preventDefault();
                 return false;
-            } else if (e.which == 40) { // down key
-                $(".video-modal .down").click();
+            } else if (e.which == 39) { // right key
+                $(".video-modal .right").click();
                 e.preventDefault();
                 return false;
             }
