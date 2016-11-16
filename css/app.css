@@ -270,6 +270,10 @@ img.yt-video-image {
     text-decoration: none;
 }
 
+[dir="rtl"] .video-modal .close {
+    float: left;
+}
+
 .video-modal-content {
     margin: auto;
     display: flex;

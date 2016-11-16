@@ -74,10 +74,6 @@ var VOYAGER;
 
                 VOYAGER.refreshUI();
             });
-
-            // Register link handlers
-            VOYAGER.registerVideoLinkHandlers();
-            VOYAGER.registerWebLinkHandlers();
         },
 
         sendMessage: function(message) {
@@ -348,6 +344,10 @@ var VOYAGER;
                 });
             });
 
+            // Register link handlers
+            VOYAGER.registerVideoLinkHandlers();
+            VOYAGER.registerWebLinkHandlers();
+
             var context = {
                 "strings": VOYAGER.strings[VOYAGER.language],
                 "lang": VOYAGER.language,
@@ -412,7 +412,8 @@ var VOYAGER;
                 var modalContent = $(".video-modal-content-inner");
 
                 modalContent.empty();
-                modalContent.append('<div class="close">×</div><webview id="embedded-video" src="'
+                modalContent.append('<div class="close">×</div>');
+                modalContent.append('<webview id="embedded-video" src="'
                     + $(this).attr("data-url") + '"></webview>');
 
                 // Display metadata
@@ -472,6 +473,7 @@ var VOYAGER;
             $(document).on("click", ".web-link", function(e) {
                 var modalContent = $(".web-modal .content");
                 modalContent.empty();
+                modalContent.append('<div class="close">×</div>');
                 modalContent.append('<webview id="embedded-webpage" src="'
                     + $(this).attr("data-url") + '"></webview>');
 
