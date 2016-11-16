@@ -184,6 +184,7 @@
       </div>
 
       <div class="video-modal">
+        <!-- This div is explicitly set LTR so theh left/right buttons are not swapped in RTL-->
         <div class="video-modal-content" dir="ltr">
           <div class="left">
             <svg width="32" height="64">
@@ -193,6 +194,7 @@
                         stroke-linecap="round" fill="none"/>
             </svg>
           </div>
+          <!-- Need to explicitly set dir here because parent div is locked to LTR -->
           <div class="video-modal-content-inner" dir="{{layout}}"></div>
           <div class="right">
             <svg width="32" height="64">
