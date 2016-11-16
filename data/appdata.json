@@ -29,15 +29,6 @@
         },
         {
             "image": "",
-            "name": "coding",
-            "title": {
-                "de": "Programmierung",
-                "ar": "برمجة ",
-                "en": "Coding"
-            }
-        },
-        {
-            "image": "",
             "name": "design_art",
             "title": {
                 "de": "Design und Kunst",
@@ -52,6 +43,15 @@
                 "de": "Technologie",
                 "ar": "تكنولوجيا",
                 "en": "Technology"
+            }
+        },
+        {
+            "image": "",
+            "name": "coding",
+            "title": {
+                "de": "Programmierung",
+                "ar": "برمجة ",
+                "en": "Coding"
             }
         },
         {

@@ -4586,15 +4586,6 @@
         },
         {
             "image": "",
-            "name": "coding",
-            "title": {
-                "de": "Programmierung",
-                "ar": "\u0628\u0631\u0645\u062c\u0629 ",
-                "en": "Coding"
-            }
-        },
-        {
-            "image": "",
             "name": "design_art",
             "title": {
                 "de": "Design und Kunst",
@@ -4609,6 +4600,15 @@
                 "de": "Technologie",
                 "ar": "\u062a\u0643\u0646\u0648\u0644\u0648\u062c\u064a\u0627",
                 "en": "Technology"
+            }
+        },
+        {
+            "image": "",
+            "name": "coding",
+            "title": {
+                "de": "Programmierung",
+                "ar": "\u0628\u0631\u0645\u062c\u0629 ",
+                "en": "Coding"
             }
         },
         {
