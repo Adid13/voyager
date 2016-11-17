@@ -285,12 +285,12 @@ img.yt-video-image {
 
 .video-modal-content .left {
     cursor: pointer;
-    margin-right: 30px;
+    margin-right: 45px;
 }
 
 .video-modal-content .right {
     cursor: pointer;
-    margin-left: 30px;
+    margin-left: 45px;
 }
 
 .video-modal-content-inner {
