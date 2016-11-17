@@ -258,7 +258,7 @@ img.yt-video-image {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.9);
 }
 
 .video-modal .close {
