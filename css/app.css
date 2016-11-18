@@ -197,6 +197,11 @@ img.yt-video-image {
     height: 450px;
 }
 
+/* Zoom in a bit to account for imperfect aspect ratios of some screen shots */
+.feature-image-container img {
+    max-width: 101%;
+}
+
 .metadata {
     padding: 15px 15px 15px;
     background-color: #FFF;
@@ -243,6 +248,12 @@ img.yt-video-image {
     font-size: 10pt;
     text-transform: uppercase;
     margin-bottom: 3px;
+}
+
+.metadata .media_type {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #555;
 }
 
 .metadata .author a {
