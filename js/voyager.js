@@ -98,12 +98,11 @@ var VOYAGER;
 
             if (!isDefined(VOYAGER.category) && !isDefined(VOYAGER.org)) {
                 VOYAGER.category = {
-                    "image": "",
-                    "name": "math_science",
+                    "name": "science",
                     "title": {
-                        "de": "Mathe und Wissenschaft",
-                        "ar": "الرياضيات والعلوم",
-                        "en": "Math and Science"
+                        "de": "Wissenschaft",
+                        "ar": "علم",
+                        "en": "Science"
                     }
                 };
             }

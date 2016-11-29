@@ -19,16 +19,14 @@
 
     "categories": [
         {
-            "image": "",
-            "name": "math_science",
+            "name": "science",
             "title": {
-                "de": "Mathe und Wissenschaft",
-                "ar": "الرياضيات والعلوم",
-                "en": "Math and Science"
+                "de": "Wissenschaft",
+                "ar": "علم",
+                "en": "Science"
             }
         },
         {
-            "image": "",
             "name": "design_art",
             "title": {
                 "de": "Design und Kunst",
@@ -37,16 +35,6 @@
             }
         },
         {
-            "image": "",
-            "name": "technology",
-            "title": {
-                "de": "Technologie",
-                "ar": "تكنولوجيا",
-                "en": "Technology"
-            }
-        },
-        {
-            "image": "",
             "name": "coding",
             "title": {
                 "de": "Programmierung",
@@ -55,16 +43,22 @@
             }
         },
         {
-            "image": "",
-            "name": "language",
+            "name": "math",
             "title": {
-                "de": "Sprache",
-                "ar": "لغات",
-                "en": "Language"
+                "de": "Mathe",
+                "ar": "الرياضيات",
+                "en": "Math"
             }
         },
         {
-            "image": "",
+            "name": "technology",
+            "title": {
+                "de": "Technologie",
+                "ar": "تكنولوجيا",
+                "en": "Technology"
+            }
+        },
+        {
             "name": "other",
             "title": {
                 "de": "Andere",

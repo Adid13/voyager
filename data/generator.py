@@ -34,9 +34,9 @@ EXPECTED_LABELS = ['strings', 'orgs', 'categories']
 CATEGORIES = {
     "Coding": "coding",
     "Design and Art": "design_art",
-    "Language": "language",
-    "Math and Science": "math_science",
+    "Math": "math",
     "Other": "other",
+    "Science": "science",
     "Technology": "technology",
 }
 
