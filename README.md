@@ -8,6 +8,9 @@ to other platforms. When it comes to education, Voyager is meant to be a
 stepping stone, not a final destination. It is meant to excite and ignite while
 preparing learners to explore beyond Voyager’s boundaries.
 
+![Voyager screenshot]
+(https://github.com/google/voyager/blob/master/screenshot.jpg)
+
 #### Category Image Licenses
 
 The following images are used under license:
